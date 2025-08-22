@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Facebook App Config -->
+    <string name="facebook_app_id">786230804348058</string>
+    <string name="facebook_client_token">944c658f6c18712186985523fd90a502</string>
+</resources>

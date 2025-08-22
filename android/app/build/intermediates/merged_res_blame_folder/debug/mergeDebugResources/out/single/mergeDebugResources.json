@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.signin_options.app-debug-73:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.signin_options.app-main-75:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.signin_options.app-debug-73:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.signin_options.app-main-75:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.signin_options.app-debug-73:/drawable-v21_launch_background.xml.flat",
+        "source": "com.example.signin_options.app-main-75:/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "com.example.signin_options.app-debug-73:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.signin_options.app-main-75:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.signin_options.app-debug-73:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.signin_options.app-main-75:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.signin_options.app-debug-73:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.signin_options.app-main-75:/mipmap-xhdpi/ic_launcher.png"
+    }
+]

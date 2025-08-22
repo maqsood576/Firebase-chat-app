@@ -1,0 +1,39 @@
+import 'dart:io';
+import 'package:googleapis_auth/auth_io.dart'; // Google Auth package
+import 'package:http/http.dart' as http;
+
+class GetServerKey {
+  Future<String> getServerKey() async {
+    final scopes = [
+      'https://www.googleapis.com/auth/cloud-platform',
+      'https://www.googleapis.com/auth/userinfo.email',
+      'https://www.googleapis.com/auth/firebase.database',
+      'https://www.googleapis.com/auth/firebase.messaging',
+    ];
+
+    final client = await clientViaServiceAccount(
+      ServiceAccountCredentials.fromJson({
+        "type": "service_account",
+        "project_id": "signin-72f07",
+        "private_key_id": "9333a8fdb7b57593ec2481840d78876cec840f78",
+        "private_key":
+            "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDt0p833btPUIiS\njOdQ9TKE3UOXTAed0pUUaDpKOEtUTqKtlSTPI88WlSpBoYWjJ+g4P87cowiO2q+r\ncRgxz/xUOSP5q3uXcOtTvITIeRAInl8V8mq6wpA6zQiRjNv1dz8Gj3GeGdPpXzkN\nHvLaIw4T0J+yZ8wS1xzvG5O9W0bjYE0TmIWD6s6sNbjEcpkOnPHXjhEL4IucGOGW\nSxAebxRKM+DidvUp4gdFieGryfxI9y083/NkswYF+WCIUwNFZ6Pp8dj5U0cPsPqb\nTImsSuK6Jp/F8Oum4ymAyfu25OLcfXWiycH/MdgtXeHPDSitXxps8jCZr2C/l/zW\nImZYp/I3AgMBAAECggEAISN0JCi1bPvfy+vuX42LGJBsVqy1cvxg4ZMUbDsj4/+B\nE4bwthxbQt5OIQ8MvAtXhF7/yCa/johSaiU8JdTBaEr+BFAszJFjeSuPpQ+ZeFn5\nDenVjWiHCGqBgyaJj86p7ZQXVNxsdtxZ6sYhONwhngk393gXK5jl4zuIfp41ZoFD\n9za2bVFDeisvtW060Zakd+ZSxUvXPkTNsKTsmqMvNKUTI8kM9hIQ1VVSsoKOyUYQ\n/j+z8+8pCWVmkOWZFAr/fBtz///sWBATfRo0w6jeMNybqCRT+JL5VvYR5jMkltcD\nC+7O6pjuuv+t042ELZpHet+0l319DTTpqKl5JBTSoQKBgQD5ztUBbtChJFoBpNXA\n7dL7nZsdE2FtarRha4bQkXhru+L7200591XIyI9TMqwURZysknW+S2+T7MRzVNkM\ndWkCNyrKrnustlERiKReIIwIAL3d8zMepyKTCiAt2xfcauU2hx1ItKLnKOFrDKvv\njn/EHBKVRMRItbNCXqi8HksXfQKBgQDzt7y98TpzLmnY+HOvO4w7HfMaOAC6jz8p\nVd1UwY9VBYF0T18V8BSEQHp/5oYKqr6S7z7ACrYEwMcJgaDuW0MLzSib0dpI1CYP\n8zZNeEz8w6WhggGGqo+IKxojLzLgQ0t+muSSmAvuxtuHmc5WE12uTuC+OkjScMbS\nFSinfkKmwwKBgBw4zb+3sUJDRRfic3O0ap2alKeYRO2DnJVU/IobpSsmsuIZSIQ/\n+SUR439WvjIcGzMz6LFy/EwN97O/5jWOHirt6Ju1UquUfVwpv8gSjT9qNgkZLLFN\n2I4cGr6TfgKc4QBkC17naXAMIkthxxrtUmnpcgADINnGDVZ2M0HtejZRAoGAcibV\nGIIsRlau7Rkx1hmmDOpyOw2QCdGeW9YD3PbsE36Iq9mhR70zXt50ggOPNN/Ucy3r\nzjc2GfPRRfqZTgsg1B47rwATpZj4WvAntxFpvdpFcehanqC0qarGi0RIKBJdAee6\nt47Px/8MQ+8eXeKkNkhrq63Q/gAkn7GZYRoaTdECgYBOv+8MWJhTbLbPz9FUSf2Y\nlUlcl8wwCtnRL9c8ESPUXzoUZv44dcVSpgimLlXXCTZ4PWBnIPadakFxamVgtZtB\nl7bC/WhPjEmJ2TEHXpfSPfsUsHjToisq1xavx9mW4jJ5TeKtS7G/s3Z2xw3owLXP\n+Qm18wMKZdcycgp/KkyF8g==\n-----END PRIVATE KEY-----\n",
+        "client_email":
+            "firebase-adminsdk-fbsvc@signin-72f07.iam.gserviceaccount.com",
+        "client_id": "115065677406851810243",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url":
+            "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url":
+            "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40signin-72f07.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      }),
+      scopes,
+    );
+
+    final accessServerKey = client.credentials.accessToken.data;
+
+    return accessServerKey;
+  }
+}

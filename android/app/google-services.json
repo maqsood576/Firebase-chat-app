@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "560496834086",
+    "firebase_url": "https://signin-72f07-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "signin-72f07",
+    "storage_bucket": "signin-72f07.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560496834086:android:a017693fd38c6e43aa18e7",
+        "android_client_info": {
+          "package_name": "com.example.signin_options"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560496834086-5u4l0bcgrdf4np3cmn09kpcn5ak83ou2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.signin_options",
+            "certificate_hash": "620f9f8483043571f8711c9d87a8d14faf43cef6"
+          }
+        },
+        {
+          "client_id": "560496834086-g17u992h7tagkoqjtmhoa83q5utf2kk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfz8qvCNI8Hb2IM-ZzWh8nsl6TaUELpqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560496834086-g17u992h7tagkoqjtmhoa83q5utf2kk2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
